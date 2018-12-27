@@ -3,7 +3,10 @@ module.exports = config => {
     autoWatch: true,
     basePath: '',
     browsers: ['Chrome'],
-    files: [],
+    files: [
+      'src/MaxMin.js',
+      'test/MaxMin.spec.js'
+    ],
     frameworks: ['jasmine']
   })
 }
