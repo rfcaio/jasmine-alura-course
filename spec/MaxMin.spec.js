@@ -21,6 +21,7 @@ describe('MaxMin', function () {
 
   it('should get the maximum and minimum of an array with a single element', function () {
     var mm = new MaxMin([4])
-    expect(mm.max).toEqual(mm.min)
+    expect(mm.max).toEqual(4)
+    expect(mm.min).toEqual(4)
   })
 })

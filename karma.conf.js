@@ -5,7 +5,7 @@ module.exports = config => {
     browsers: ['Chrome'],
     files: [
       'src/MaxMin.js',
-      'test/MaxMin.spec.js'
+      'spec/MaxMin.spec.js'
     ],
     frameworks: ['jasmine']
   })
