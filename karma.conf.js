@@ -4,8 +4,12 @@ module.exports = config => {
     basePath: '',
     browsers: ['Chrome'],
     files: [
+      'src/Consultation.js',
       'src/MaxMin.js',
-      'spec/MaxMin.spec.js'
+      'src/Patient.js',
+      'spec/Consultation.spec.js',
+      'spec/MaxMin.spec.js',
+      'spec/Patient.spec.js'
     ],
     frameworks: ['jasmine']
   })
