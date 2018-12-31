@@ -9,19 +9,19 @@ function PatientBuilder () {
     construct: function construct () {
       return new Patient(_name, _age, _height, _weight)
     },
-    withAge (age) {
+    withAge: function withAge (age) {
       _age = age
       return this
     },
-    withHeight (height) {
+    withHeight: function withHeight (height) {
       _height = height
       return this
     },
-    withName (name) {
+    withName: function withName (name) {
       _name = name
       return this
     },
-    withWeight (weight) {
+    withWeight: function withWeight (weight) {
       _weight = weight
       return this
     }
