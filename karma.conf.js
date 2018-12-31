@@ -9,7 +9,8 @@ module.exports = config => {
       'src/Patient.js',
       'spec/Consultation.spec.js',
       'spec/MaxMin.spec.js',
-      'spec/Patient.spec.js'
+      'spec/Patient.spec.js',
+      'spec/PatientBuilder.js'
     ],
     frameworks: ['jasmine']
   })

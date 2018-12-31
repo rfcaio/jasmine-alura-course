@@ -4,7 +4,7 @@ describe('Patient', function () {
   var patient
 
   beforeEach(function () {
-    patient = new Patient('John Connor', 28, 1.80, 85)
+    patient = new PatientBuilder().withName('John Connor').withAge(28).withHeight(1.80).withWeight(85).construct()
   })
 
   it('should calculate body max index of a patient', function () {
