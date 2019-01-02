@@ -25,6 +25,10 @@ function ConsultationBuilder () {
     withProceedings: function withProceedings (proceedings) {
       _proceedings = proceedings
       return this
+    },
+    withDate: function withDate (date) {
+      _date = date
+      return this
     }
   }
 }
