@@ -8,6 +8,7 @@ module.exports = config => {
       'src/MaxMin.js',
       'src/Patient.js',
       'spec/Consultation.spec.js',
+      'spec/ConsultationBuilder.js',
       'spec/MaxMin.spec.js',
       'spec/Patient.spec.js',
       'spec/PatientBuilder.js'

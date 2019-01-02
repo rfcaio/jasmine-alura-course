@@ -1,6 +1,12 @@
 
-function Consultation (patient, proceedings, isParticular, isRegress) {
+function Consultation (patient, proceedings, isPrivate, isRegress, date) {
   return {
+    getDate: function getDate () {
+      return date
+    },
+    getPatient: function getPatient () {
+      return patient
+    },
     getPrice: function getPrice () {
       if (isRegress) {
         return 0
@@ -18,10 +24,19 @@ function Consultation (patient, proceedings, isParticular, isRegress) {
             price += 25
         }
       })
-      if (isParticular) {
+      if (isPrivate) {
         price *= 2
       }
       return price
+    },
+    getProceedings: function getProceedings () {
+      return proceedings
+    },
+    isPrivate: function isPrivate () {
+      return isPrivate
+    },
+    isRegress: function isRegress () {
+      return isRegress
     }
   }
 }
