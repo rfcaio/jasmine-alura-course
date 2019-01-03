@@ -18,16 +18,16 @@ function ConsultationBuilder () {
       _isRegress = true
       return this
     },
+    withDate: function withDate (date) {
+      _date = date
+      return this
+    },
     withPatient: function withPatient (patient) {
       _patient = patient
       return this
     },
     withProceedings: function withProceedings (proceedings) {
       _proceedings = proceedings
-      return this
-    },
-    withDate: function withDate (date) {
-      _date = date
       return this
     }
   }
